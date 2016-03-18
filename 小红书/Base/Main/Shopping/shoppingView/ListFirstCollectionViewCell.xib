@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ListFirstCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="457"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="339" height="457"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U4S-pW-UuJ">
+                        <rect key="frame" x="0.0" y="0.0" width="339" height="259"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="215" id="H0O-dd-jbG"/>
+                            <constraint firstAttribute="height" constant="259" id="mbo-T7-JPw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="H0O-dd-jbG"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="4WM-Op-TPd">
+                        <rect key="frame" x="0.0" y="260" width="339" height="197"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="197" id="Sik-p2-sY9"/>
+                            <constraint firstAttribute="height" constant="147" id="otB-in-Z6d"/>
+                            <constraint firstAttribute="height" constant="160" id="y8u-15-lmm"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1Gp-nK-8bd">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="otB-in-Z6d"/>
+                                <exclude reference="y8u-15-lmm"/>
+                            </mask>
+                        </variation>
+                    </collectionView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstItem="U4S-pW-UuJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5gU-Ps-mef"/>
+                <constraint firstAttribute="trailing" secondItem="U4S-pW-UuJ" secondAttribute="trailing" id="Kdn-jT-Ohh"/>
+                <constraint firstAttribute="trailing" secondItem="4WM-Op-TPd" secondAttribute="trailing" id="LIx-R7-4A3"/>
+                <constraint firstItem="4WM-Op-TPd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Lki-2p-hLk"/>
+                <constraint firstAttribute="bottom" secondItem="4WM-Op-TPd" secondAttribute="bottom" id="TSZ-nv-btu"/>
+                <constraint firstItem="U4S-pW-UuJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="y8u-Pe-KQr"/>
+            </constraints>
+            <size key="customSize" width="339" height="457"/>
+            <connections>
+                <outlet property="bigImageVIew" destination="U4S-pW-UuJ" id="FjE-IQ-avJ"/>
+                <outlet property="collView" destination="4WM-Op-TPd" id="2dh-WB-UXd"/>
+            </connections>
+            <point key="canvasLocation" x="297.5" y="245.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

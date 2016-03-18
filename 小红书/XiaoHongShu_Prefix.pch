@@ -1,0 +1,16 @@
+//
+//  XiaoHongShu_Prefix.pch
+//  小红书
+//
+//  Created by 李志文 on 16/2/9.
+//  Copyright © 2016年 Javenlee. All rights reserved.
+//
+
+#ifndef XiaoHongShu_Prefix_pch
+#define XiaoHongShu_Prefix_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Common.h"
+
+#endif /* XiaoHongShu_Prefix_pch */

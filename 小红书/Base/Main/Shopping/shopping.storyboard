@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hu4-Pi-A7s">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Shopping View Controller-->
+        <scene sceneID="dtQ-z9-rcp">
+            <objects>
+                <viewController id="hu4-Pi-A7s" customClass="ShoppingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nc5-Tc-KlO"/>
+                        <viewControllerLayoutGuide type="bottom" id="7LK-xL-bzx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R9J-ZB-d5B">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view tag="200" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="El5-5J-5ay" customClass="TopVIew">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.0" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="fRe-MN-LM3"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fRe-MN-LM3"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="fRe-MN-LM3"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view tag="201" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wlw-1S-H4E" customClass="MiddleVIew">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.91944440730834065" green="0.89959800032036863" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="cQ1-iK-6hi"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cQ1-iK-6hi"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="cQ1-iK-6hi"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="El5-5J-5ay" firstAttribute="top" secondItem="nc5-Tc-KlO" secondAttribute="bottom" constant="-20" id="18V-aJ-KGu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wlw-1S-H4E" secondAttribute="trailing" constant="-20" id="3Rk-ew-T61"/>
+                            <constraint firstItem="El5-5J-5ay" firstAttribute="leading" secondItem="R9J-ZB-d5B" secondAttribute="leadingMargin" constant="-20" id="TUx-76-HO4"/>
+                            <constraint firstItem="Wlw-1S-H4E" firstAttribute="top" secondItem="nc5-Tc-KlO" secondAttribute="bottom" constant="42" id="Tim-WO-iFM"/>
+                            <constraint firstItem="El5-5J-5ay" firstAttribute="height" secondItem="R9J-ZB-d5B" secondAttribute="height" id="ZIQ-6e-cgx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="El5-5J-5ay" secondAttribute="trailing" constant="-20" id="owq-km-MMX"/>
+                            <constraint firstItem="Wlw-1S-H4E" firstAttribute="height" secondItem="R9J-ZB-d5B" secondAttribute="height" id="sqI-bU-YYB"/>
+                            <constraint firstItem="Wlw-1S-H4E" firstAttribute="leading" secondItem="R9J-ZB-d5B" secondAttribute="leadingMargin" constant="-20" id="uMf-Pw-8VQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="El5-5J-5ay"/>
+                                <exclude reference="Wlw-1S-H4E"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="18V-aJ-KGu"/>
+                                <exclude reference="TUx-76-HO4"/>
+                                <exclude reference="ZIQ-6e-cgx"/>
+                                <exclude reference="owq-km-MMX"/>
+                                <exclude reference="3Rk-ew-T61"/>
+                                <exclude reference="Tim-WO-iFM"/>
+                                <exclude reference="sqI-bU-YYB"/>
+                                <exclude reference="uMf-Pw-8VQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="El5-5J-5ay"/>
+                                <include reference="Wlw-1S-H4E"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="18V-aJ-KGu"/>
+                                <include reference="TUx-76-HO4"/>
+                                <exclude reference="ZIQ-6e-cgx"/>
+                                <include reference="owq-km-MMX"/>
+                                <include reference="3Rk-ew-T61"/>
+                                <include reference="Tim-WO-iFM"/>
+                                <exclude reference="sqI-bU-YYB"/>
+                                <include reference="uMf-Pw-8VQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="middleView" destination="Wlw-1S-H4E" id="wXC-wp-qYc"/>
+                        <outlet property="topView" destination="El5-5J-5ay" id="Uth-g2-bUJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igR-Jr-FDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="331.5" y="345"/>
+        </scene>
+    </scenes>
+</document>
